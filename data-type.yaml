@@ -1,0 +1,23 @@
+- name: demo on dat-types
+  hosts: local
+  conections: local
+  vars:
+    PROGRAM: "DevSevOps with AWS"
+    DURATION: 140
+    IS-LIVE: true
+    DETAILS:
+      MONTHS: 4
+      TRAINER: "Shiva"
+    TOPICS:
+    - Linux
+      Ansible
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+    msg: {
+      Program: {{ PROGRAM }}
+      duration: {{ DURATION }}
+      is_live: {{ IS_LIVE }}
+      Details: {{ DETAILS }}
+      topics: {{ TOPIC }}
+    }
