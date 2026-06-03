@@ -1,15 +1,15 @@
--  name: demo on data types
-   hosts: local
-   connection: local
-   vars:
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
     COURSE: "DevSecOps"
     TRAINER: "Shiva"
-   TOPICS:
-   -  Ansible
-   -  AWS
-   tasks:
-   -  name: Print data
-   ansible.builtin.debug:
+  TOPICS:
+  -  Ansible
+  -  AWS
+  tasks:
+  -  name: Print data
+  ansible.builtin.debug:
     msg: |
       Course: {{ COURSE }}
       Topis: {{ TOPICS }}
