@@ -3,7 +3,7 @@
   connection: local
   vars:
     Is_LIVE: true
-  tasts:
+  tasks:
   - name: check live or not
     ansible.builtin.debug:
       msg: "Yes, it is Live"
