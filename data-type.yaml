@@ -1,4 +1,4 @@
-- name: demo on data-types
+- name: demo on data types
   hosts: local
   conections: local
   vars:
@@ -10,7 +10,7 @@
       TRAINER: "Shiva"
     TOPICS:
     - Linux
-      Ansible
+    - Ansible
   tasks:
   - name: print variables
     ansible.builtin.debug:
