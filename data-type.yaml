@@ -4,12 +4,14 @@
   vars:
     COURSE: "DevSecOps"
     TRAINER: "Shiva"
-  TOPICS:
-  -  Ansible
-  -  AWS
+    TOPICS:
+    -  Ansible
+    -  AWS
   tasks:
   -  name: Print data
   ansible.builtin.debug:
     msg: |
       Course: {{ COURSE }}
       Topis: {{ TOPICS }}
+
+-
