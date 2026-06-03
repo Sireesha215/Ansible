@@ -4,7 +4,7 @@
   vars:
     PROGRAM: "DevSevOps with AWS"
     DURATION: 140
-    IS-LIVE: true
+    IS_LIVE: true
     DETAILS:
       MONTHS: 4
       TRAINER: "Shiva"
@@ -14,10 +14,11 @@
   tasks:
   - name: print variables
     ansible.builtin.debug:
-    msg: {
+    msg: |
       Program: {{ PROGRAM }}
-      duration: {{ DURATION }}
+      Duration: {{ DURATION }}
       is_live: {{ IS_LIVE }}
       Details: {{ DETAILS }}
       topics: {{ TOPIC }}
-    }
+    
+
