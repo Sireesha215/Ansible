@@ -1,6 +1,6 @@
 - name: demo on data types
   hosts: local
-  conections: local
+  connections: local
   vars:
     PROGRAM: "DevSevOps with AWS"
     DURATION: 140
@@ -21,4 +21,5 @@
       Details: {{ DETAILS }}
       topics: {{ TOPIC }}
     
+
 
