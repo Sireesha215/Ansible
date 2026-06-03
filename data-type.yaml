@@ -1,23 +1,15 @@
-- name: demo on data types
-  hosts: local
-  connection: local
-  vars:
-    PROGRAM: "DevSevOps with AWS"
-    DURATION: 140
-    IS_LIVE: true
-    DETAILS:
-      MONTHS: 4
-      TRAINER: "Shiva"
-    TOPICS:
-    - Linux
-    - Ansible
-  tasks:
-  - name: print variables
-    ansible.builtin.debug:
-      msg: |
-        Program: {{ PROGRAM }}
-        Duration: {{ DURATION }}
-        is_live: {{ IS_LIVE }}
-        Details: {{ DETAILS }}
-        topics: {{ TOPICS }}
-    
+-  name: demo on data types
+   hosts: local
+   connection: local
+   vars:
+    COURSE: "DevSecOps"
+    TRAINER: "Shiva"
+   TOPICS:
+   -  Ansible
+   -  AWS
+   tasks:
+   -  name: Print data
+   ansible.builtin.debug:
+    msg: |
+      Course: {{ COURSE }}
+      Topis: {{ TOPICS }}
