@@ -19,5 +19,5 @@
         Duration: {{ DURATION }}
         is_live: {{ IS_LIVE }}
         Details: {{ DETAILS }}
-        topics: {{ TOPIC }}
+        topics: {{ TOPICS }}
     
