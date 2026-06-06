@@ -1,6 +1,6 @@
 - name: demo on error handling
   hosts: local
-  connaction: local
+  connection: local
   tasts:
   - name: check user exists or not
     ansible.builtin.command:  id roboshop
@@ -9,4 +9,3 @@
   - name: print the user_output
     ansible.builtin.debug:
       msg: "{{ user_output}}"
-      
