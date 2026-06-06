@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   become: yes
-  tasts:
+  tasks:
   - name: create user
     ansible.builtin.user:
      name: John
